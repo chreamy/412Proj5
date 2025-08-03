@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Chris - About</title>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="format-detection" content="telephone=no" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="author" content="" />
+      <meta name="keywords" content="" />
+      <meta name="description" content="" />
+      <script>
+         (function () {
+           var storedStyle = localStorage.getItem("theme") || "style.css";
+           document.write(
+             '<link rel="stylesheet" id="pagestyle" type="text/css" href="' +
+               storedStyle +
+               '" />'
+           );
+         })();
+       </script>
+   </head>
+   <body class="bg"><img src="assets/laser.gif" id="laser" class="laser">
+    <img src="assets/lightstick.png" id="custom-cursor" style="position: absolute; pointer-events: none; z-index: 10; width: 100px; height: 100px; display: none;">
+
+
+    <div id="movie" class="movie-container" style="transition: all 3s; opacity: 0; position: absolute; background-color: black; width: 100%; height: 100vh;" >
+      
+      
+    <img src="assets/movie.gif"class="movie" id="moviegif"><div class="bigtitle"><h1 style="left:20px; top: 40px; font-size: 80px;" id="hands">HANDS</h1><h1 style="right:80px; top: 40px; font-size: 120px;" id="in">IN</h1><h1 style="left:60px; top: 260px; font-size: 110px;" id="the">THE</h1><h1 style="right:40px; top: 260px; font-size: 110px;" id="air">AIR</h1></div></div>
+    <img src="assets/stars.gif" id="stars" class="stars">
+      <div class='change btn btn-large' id="change" onclick="changeStyle()">Change Style</div>
+      <div id="ry" >
+        <img src="assets/speaker.png" id="speaker" class="speaker">
+      <img src="assets/speaker.png" id="speaker2" class="speaker2">
+      <img src="assets/rainbow-neko.gif" id="rainbow" class="rainbow">
+      <img src="assets/rainbow-neko.gif" id="rainbow2" class="rainbow2">
+      
+      <div id="about-me"class="perspective" >
+      <div class="box colorbg" id="box">
+      <div class="face right">
+        <canvas id="visualizerright" class="visualizer rotateright" width="750" height="400"></canvas>
+      </div>
+      <div class="face left">
+        <canvas id="visualizerleft" class="visualizer rotateleft" width="750" height="400"></canvas></div>
+      <div class="face bottom"></div>
+      <div class="face top"></div>
+      <canvas id="visualizer" class="visualizer" width="1200" height="300"></canvas>
+        <div class="container" id="container">
+          <img src="assets/vinyl.png" class="vinyl" id="vinyl"/>
+          <p  class="vinyl" style="margin-top: 140px; color:red"><strong>&nbsp;&nbsp;^ click me</strong></p>
+      <div class="row flex">
+         <div class="col-6">
+            <h2 class="section-title">Christopher Liu</h2>
+         </div>
+         <div class="col-s">
+            <img src="assets/nom.gif" class="img-fluid nom" />
+         </div>
+         <div class="col-s">
+            <img src="assets/nom.gif" class="img-fluid nom" />
+         </div>
+         <div class="col-s">
+            <img src="assets/nom.gif" class="img-fluid nom" />
+         </div>
+      </div>
+      <div class="intro">
+         <p>
+            Howdy! I am Christopher Liu, currently a CS student at Texas A&M
+            University. I do fullstack development, machine learning, and
+            human-computer interaction. I am currently looking for Summer 2025
+            SWE internships, I am a fast learning, effective communicator, and
+            experinced programmer. <br />Learn more about me using the links
+            below :)
+         </p>
+      </div>
+      
+      <script src="audio.js"></script>
+      
+      
+      <div class="row2">
+         <div class="col-3">
+            <div class="achievement-block center">
+               <img src="assets/kiyo.png" class="img-fluid pfp rounded-circle" id="pic1"/>
+               <a href="resume.html" class="btn btn-large">Resume</a>
+               <p class="centertext">
+                  Access my resume to view my technical skills, involvements, and
+                  work experinces!
+               </p>
+            </div>
+         </div>
+         <div class="col-3">
+            <div class="achievement-block center">
+               <img src="assets/desk.jpg" class="img-fluid pfp rounded-circle" id="pic2"/>
+               <a href="portfolio.html" class="btn btn-large">Portfolio</a>
+               <p class="centertext">
+                  See images and descriptions of my past work!
+               </p>
+            </div>
+         </div>
+         <div class="col-3">
+            <div class="achievement-block center">
+               <img src="assets/school.jpg" class="img-fluid pfp rounded-circle" id="pic3"/>
+               <a href="service.html" class="btn btn-large">Service</a>
+               <p class="centertext">
+                  My volunteer and ledership activities both in and outside the
+                  school!
+               </p>
+            </div>
+         </div>
+         <div class="col-3">
+            <div class="achievement-block center">
+               <img src="assets/bot.jpg" class="img-fluid pfp rounded-circle" id="pic4"/>
+               <a href="ai.html" class="btn btn-large">AI Page</a>
+               <p class="centertext">
+                  Introducing the powerful capabilities of AI!
+               </p>
+            </div>
+         </div>
+      </div></div>
+      </div>
+      </div>
+      <script>
+         function changeStyle() {
+           var styleLink = document.getElementById('pagestyle');
+           var currentStyle = styleLink.href;
+   
+           // Toggle between 'style.css' and 'style2.css'
+           if (currentStyle.includes('style2.css')) {
+             styleLink.href = 'style.css';
+             localStorage.setItem('theme', 'style.css'); // Store the chosen style
+           } else {
+             styleLink.href = 'style2.css';
+             localStorage.setItem('theme', 'style2.css'); // Store the chosen style
+           }
+         }
+       </script>
+      <script>
+        document.addEventListener('mousemove', function(e) {
+            const customCursor = document.getElementById('custom-cursor');
+            customCursor.style.left = e.pageX + 'px';
+            customCursor.style.top = e.pageY + 'px';
+        });
+        </script>
+        
+   </body>
+</html>

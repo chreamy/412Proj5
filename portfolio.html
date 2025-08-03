@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chris - Portfolio</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <script>
+      (function () {
+        var storedStyle = localStorage.getItem("theme") || "style.css";
+        document.write(
+          '<link rel="stylesheet" id="pagestyle" type="text/css" href="' +
+            storedStyle +
+            '" />'
+        );
+      })();
+    </script>
+  </head>
+  <body class="bg">
+    <div class='change btn btn-large' onclick="changeStyle()">Change Style</div>
+    <section id="about-me" >
+      <div class="container colorbg">
+        <div class="row flex">
+          <div class="col-6">
+            <h2 class="section-title">Portfolio</h2>
+          </div>
+		  <div class="col-s">
+              <img src="assets/pochi.gif" class="img-fluid pochi" />
+        </div>
+		<div class="col-s">
+			<img src="assets/pochi.gif" class="img-fluid pochi" />
+	  </div>
+	  <div class="col-s">
+		<img src="assets/pochi.gif" class="img-fluid pochi" />
+  </div>
+  <div class="">
+		<a href="index.html" class="btn btn-large">Back</a>
+  </div>
+  </div>
+
+  
+  <div class="row3 center sep">
+    <div class="col-3 center">
+        <img src="assets/eecs.png" class="p-img im">
+        <p class="centertext">NTU Big Screen Display, currectly deployed at Taiwan's leading research institute</p>
+        <a href="https://github.com/chreamy/NTU-EECS-site" class="btn btn-large">Github</a>
+    </div>
+    <div class="col-3 center">
+      <img src="assets/kk logo.png" class="p-img">
+      <p class="centertext">Online clothing website</p>
+      <a href="https://kiyokiru.myshopify.com" class="btn btn-large">Online Store</a>
+  </div>
+  <div class="col-3 center">
+    <img src="assets/medium.jpg" class="p-img">
+    <p class="centertext">Personal Programming Journals</p>
+    <a href="https://chreamy.medium.com/" class="btn btn-large">Blog</a>
+</div>
+<div class="col-3 center">
+  <img src="assets/git.png" class="p-img">
+  <p class="centertext">My Repositories</p>
+  <a href="https://github.com/chreamy" class="btn btn-large">Github</a>
+</div><h2 class="section-title hide">Designs</h2>
+</div>
+<div class="row4 center sep ">
+  <div class="col-4 center">
+      <img src="assets/b1.gif" class="p-img1">
+  </div>
+  <div class="col-4 center">
+    <img src="assets/b2.gif" class="p-img1">
+</div>
+<div class="col-4 center">
+  <img src="assets/b3.gif" class="p-img1">
+</div>
+</div>
+<div class="row4 center sep ">
+  <div class="col-4 center">
+      <img src="assets/b4.gif" class="p-img1">
+  </div>
+  <div class="col-4 center">
+    <img src="assets/b5.gif" class="p-img1">
+</div>
+<div class="col-4 center">
+  <img src="assets/b6.gif" class="p-img1">
+</div>
+</div>
+<div class="row4 center sep ">
+  <div class="col-4 center">
+      <img src="assets/a1.png" class="p-img1">
+  </div>
+  <div class="col-4 center">
+    <img src="assets/a2.png" class="p-img1">
+</div>
+<div class="col-4 center">
+  <img src="assets/a3.png" class="p-img1">
+</div>
+</div>
+<div class="row4 center sep mb">
+  <div class="col-4 center">
+      <img src="assets/a4.png" class="p-img1">
+  </div>
+  <div class="col-4 center">
+    <img src="assets/a5.png" class="p-img1">
+</div>
+<div class="col-4 center">
+  <img src="assets/a6.png" class="p-img1">
+</div>
+</div>
+</div></div>
+    </section>
+    <script>
+      const audioElement = document.getElementById('audio');
+const visualizer = new PowerAudio.Viz({
+  container: '#visualization',
+  source: audioElement
+});
+
+audioElement.play();
+visualizer.flip();
+  </script>
+  <script>
+    function changeStyle() {
+      var styleLink = document.getElementById('pagestyle');
+      var currentStyle = styleLink.href;
+
+      // Toggle between 'style.css' and 'style2.css'
+      if (currentStyle.includes('style2.css')) {
+        styleLink.href = 'style.css';
+        localStorage.setItem('theme', 'style.css'); // Store the chosen style
+      } else {
+        styleLink.href = 'style2.css';
+        localStorage.setItem('theme', 'style2.css'); // Store the chosen style
+      }
+    }
+  </script>
+  </body>
+</html>

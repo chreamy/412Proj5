@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chris - Services</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <script>
+      (function () {
+        var storedStyle = localStorage.getItem("theme") || "style.css";
+        document.write(
+          '<link rel="stylesheet" id="pagestyle" type="text/css" href="' +
+            storedStyle +
+            '" />'
+        );
+      })();
+    </script>
+  </head>
+  <body class="bg">
+    <div class="change btn btn-large" onclick="changeStyle()">Change Style</div>
+    <section id="about-me">
+      <div class="container colorbg">
+        <div class="row flex">
+          <div class="col-6">
+            <h2 class="section-title">Services</h2>
+          </div>
+          <div class="col-s">
+            <img src="assets/pat.gif" class="img-fluid pochi" />
+          </div>
+          <div class="col-s">
+            <img src="assets/pat.gif" class="img-fluid pochi" />
+          </div>
+          <div class="col-s">
+            <img src="assets/pat.gif" class="img-fluid pochi" />
+          </div>
+          <div class="">
+            <a href="index.html" class="btn btn-large">Back</a>
+          </div>
+        </div>
+
+        <div class="row1 pad">
+          <div class="bgstrip2">
+            <img src="assets/space.jpg" class="stripimg" />
+            <div class="colorbg-s">
+              <h2 class="section-title hide">HASSE Space School</h2>
+              <p>
+                Tutored 30 students in the international STEM exchange program
+                with NASA and University of Houston
+              </p>
+              <a href="https://www.spaceschool.org/" class="btn btn-large"
+                >HASSE</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="bgstrip3">
+            <img src="assets/blockchain.jpg" class="stripimg" />
+            <div class="colorbg-s">
+              <h2 class="section-title hide">Blockchain Guest Speaker</h2>
+              <p>
+                Gave public speech about blockchain and decentralized
+                applications at Tatung University
+              </p>
+              <a href="https://ao.ttu.edu.tw/" class="btn btn-large">Tatung</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function changeStyle() {
+        var styleLink = document.getElementById("pagestyle");
+        var currentStyle = styleLink.href;
+
+        // Toggle between 'style.css' and 'style2.css'
+        if (currentStyle.includes("style2.css")) {
+          styleLink.href = "style.css";
+          localStorage.setItem("theme", "style.css"); // Store the chosen style
+        } else {
+          styleLink.href = "style2.css";
+          localStorage.setItem("theme", "style2.css"); // Store the chosen style
+        }
+      }
+    </script>
+  </body>
+</html>

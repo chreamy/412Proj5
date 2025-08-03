@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Modern font for a tech feel */
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8; /* Light, techy background */
+  color: #333;
+  line-height: 1.7;
+  background-image: linear-gradient(120deg, #2a2a72 0%, #009ffd 100%);
+}
+
+header,
+section,
+footer {
+  margin: auto;
+  max-width: 960px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* More rounded corners */
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(
+    135deg,
+    #0077cc,
+    #34d1bf
+  ); /* Gradient background for a modern look */
+  color: #ffffff;
+  text-align: center; /* Center the header text */
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px; /* Slightly larger font size */
+  border-bottom: 4px solid #ffcc00; /* Yellow bottom border to make it pop */
+  display: inline-block;
+  padding-bottom: 10px;
+  letter-spacing: 1px; /* Slight spacing for modern typography */
+  font-weight: 700;
+}
+
+/* Section Styles */
+section {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9fa; /* Light background for contrast */
+  border-left: 4px solid #34d1bf; /* Accent left border */
+}
+
+section h2 {
+  color: #0077cc; /* Bright color for headers */
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.section-img {
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px; /* Round the image corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Add a modern shadow to the images */
+}
+
+/* Paragraph Styles */
+p {
+  color: #555; /* Softer color for readability */
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+/* Textarea Styles */
+.prompt-textarea {
+  width: 90%;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #eaf4fc; /* Light blue for tech-like input */
+  border: 1px solid #009ffd;
+  font-family: inherit;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2c3e50;
+  color: #ffffff;
+  margin-top: 40px;
+  border-radius: 12px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005fa3; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  .section-img {
+    max-height: 200px;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chris - About</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+     </head>
+  <body class="bg">
+    <div class='change btn btn-large' onclick="changeStyle()">Change Style</div>
+    <section id="about-me" >
+      <div class="container colorbg">
+        <div class="row flex">
+          <div class="col-6">
+            <h2 class="section-title">Christopher Liu</h2>
+          </div>
+		  <div class="col-s">
+              <img src="assets/nom.gif" class="img-fluid nom" />
+        </div>
+		<div class="col-s">
+			<img src="assets/nom.gif" class="img-fluid nom" />
+	  </div>
+	  <div class="col-s">
+		<img src="assets/nom.gif" class="img-fluid nom" />
+  </div>
+</div>
+        <div class="intro">
+          <p>
+            Howdy! I am Christopher Liu, currently a CS student at Texas A&M
+            University. I do fullstack development, machine learning, and
+            human-computer interaction. I am currently looking for Summer 2024
+            SWE internships, I am a fast learning, effective communicater, and
+            experinced programmer. <br />Learn more about me using the links
+            below :)
+          </p>
+        </div>
+        <div class="row2">
+          <div class="col-3">
+            <div class="achievement-block center">
+              <img src="assets/kiyo.png" class="img-fluid pfp rounded-circle" />
+              <a href="resume.html" class="btn btn-large">Resume</a>
+              <p class="centertext">
+                Access my resume to view my technical skills, involvements, and
+                work experinces!
+              </p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="achievement-block center">
+              <img src="assets/desk.jpg" class="img-fluid pfp rounded-circle" />
+              <a href="portfolio.html" class="btn btn-large">Portfolio</a>
+              <p class="centertext">
+                See images and descriptions of my past work!
+              </p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="achievement-block center">
+              <img src="assets/school.jpg" class="img-fluid pfp rounded-circle" />
+              <a href="service.html" class="btn btn-large">Service</a>
+              <p class="centertext">
+                My volunteer and ledership activities both in and outside the
+                school!
+              </p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="achievement-block center">
+              <img src="assets/bot.jpg" class="img-fluid pfp rounded-circle" />
+              <a href="ai.html" class="btn btn-large">AI Page</a>
+              <p class="centertext">
+                Introducing the powerful capabilities of AI!
+              </p>
+            </div>
+          </div>
+        </div>
+      
+	  <div class="pika-div"><img src="assets/pika.gif" class="img-fluid pika" /></div>
+    </section>
+    <script>
+      function changeStyle() {
+        var currentStyle = document.getElementById('pagestyle').href;
+            if(currentStyle.includes('style2.css')) {
+                document.getElementById('pagestyle').href = 'style.css';
+            } else {
+                document.getElementById('pagestyle').href = 'style2.css';
+            }
+      }
+  </script>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chris - Resume</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <script>
+      (function () {
+        var storedStyle = localStorage.getItem("theme") || "style.css";
+        document.write(
+          '<link rel="stylesheet" id="pagestyle" type="text/css" href="' +
+            storedStyle +
+            '" />'
+        );
+      })();
+    </script>
+  </head>
+  <body class="bg">
+    <div class="change btn btn-large" onclick="changeStyle()">Change Style</div>
+    <section id="about-me">
+      <div class="container colorbg">
+        <div class="row flex">
+          <div class="col-6">
+            <h2 class="section-title">My Resume</h2>
+          </div>
+          <div class="col-s">
+            <img src="assets/book.gif" class="img-fluid book" />
+          </div>
+          <div class="col-s">
+            <img src="assets/book.gif" class="img-fluid book" />
+          </div>
+          <div class="col-s">
+            <img src="assets/book.gif" class="img-fluid book" />
+          </div>
+          <div class="">
+            <a href="index.html" class="btn btn-large">Back</a>
+          </div>
+        </div>
+
+        <div class="resume">
+          <img src="assets/resume.jpg" width="100%" height="800" class="sep" />
+        </div>
+
+        <a href="assets/resume.pdf" class="btn btn-large" target="_blank">
+          PDF Link</a
+        >
+
+        <div class="row1">
+          <div class="bgstrip">
+            <div class="colorbg-s">
+              <h2 class="section-title hide">Technical Skills</h2>
+              <p>
+                Here's a brief overview of my technical skill set and what I've
+                accomplished with each:
+              </p>
+              <ul>
+                <li>
+                  <strong>Full-Stack Development</strong>: Experience in
+                  building and deploying web applications using technologies
+                  like React, Node.js, and MongoDB. Developed a web app for
+                  Natoinal Taiwan University, Mainstay Digital, iVicon,
+                  DeFintek, and multiple projects
+                </li>
+                <li>
+                  <strong>Machine Learning</strong>: Hands-on experience with ML
+                  algorithms for predictive analysis. Completed courses on data
+                  science & prediction using Python and scikit-learn.
+                </li>
+                <li>
+                  <strong>Human-Computer Interaction</strong>: Studied user
+                  interface design principles and conducted usability testing
+                  for public websites, enhancing user experience by simplifying
+                  navigation flows. Recently I am also learning Unity, a
+                  powerful 3D application engine.
+                </li>
+                <!-- Add more skills as needed -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="bgstrip1">
+            <div class="colorbg-s">
+              <h2 class="section-title hide">
+                Areas of Interest in Computer Science
+              </h2>
+              <p>
+                My passion for Computer Science is driven by the following
+                areas:
+              </p>
+              <ul>
+                <li>
+                  <strong>Artificial Intelligence</strong>: Fascinated by the
+                  potential of AI to revolutionize industries and improve
+                  everyday life. Particularly interested in natural language
+                  processing and its applications in creating smarter chatbots
+                  and virtual assistants.
+                </li>
+                <li>
+                  <strong>Cloud Computing</strong>: Interested in cloud
+                  infrastructure and its role in scaling applications
+                  efficiently. Keen on learning more about AWS and Azure.
+                </li>
+                <li>
+                  <strong>Cryptocurrencies and NFTs</strong>: The rise of
+                  cryptocurrencies and NFTs (Non-Fungible Tokens) has opened new
+                  avenues in digital ownership and investment. I am keen on
+                  exploring how these digital assets continue to evolve and
+                  impact the global economy.
+                </li>
+                <li>
+                  <strong>Blockchain for Social Good</strong>: Beyond its
+                  commercial applications, I am interested in how blockchain can
+                  address social and environmental challenges, such as by
+                  enhancing transparency in charitable donations or by
+                  facilitating fair trade practices.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="word">
+          My name is Christopher Liu, and I'm presently immersed in the
+          challenging and rewarding world of Computer Science as a student at
+          Texas A&M University. My academic and project experiences span across
+          a diverse range of disciplines within technology, including full-stack
+          development, machine learning, and human-computer interaction. This
+          broad exposure has not only honed my technical skills but also
+          nurtured a deep understanding of the intricate ways in which users
+          interact with technology, driving my passion for creating intuitive
+          and impactful digital experiences. As I navigate through my academic
+          journey, I am eagerly seeking opportunities to apply my skills in a
+          practical setting through a Software Engineering (SWE) internship in
+          the summer of 2024. I bring to the table a robust set of capabilities
+          as an experienced programmer, underscored by my ability to rapidly
+          assimilate new information and technologies. My background in
+          full-stack development equips me with a comprehensive understanding of
+          software development life cycles, from conceptualization to
+          deployment, ensuring I can contribute effectively to projects right
+          from the start. Moreover, my experiences in machine learning projects
+          have provided me with a solid foundation in data analysis and
+          algorithm development, enabling me to tackle complex problems with
+          innovative solutions. My keen interest in human-computer interaction
+          drives my approach to development, always with a focus on user-centric
+          design principles. I pride myself on being a fast learner and an
+          effective communicator, skills that I believe are crucial for success
+          in fast-paced and collaborative environments. My goal is to leverage
+          these skills in a challenging internship role, where I can contribute
+          to impactful projects while continuing to grow professionally and
+          technically. I am excited about the possibility of sharing more about
+          my journey and exploring how my background, skills, and interests
+          align with potential opportunities.
+        </div>
+      </div>
+    </section>
+    <script>
+      function changeStyle() {
+        var styleLink = document.getElementById("pagestyle");
+        var currentStyle = styleLink.href;
+
+        // Toggle between 'style.css' and 'style2.css'
+        if (currentStyle.includes("style2.css")) {
+          styleLink.href = "style.css";
+          localStorage.setItem("theme", "style.css"); // Store the chosen style
+        } else {
+          styleLink.href = "style2.css";
+          localStorage.setItem("theme", "style2.css"); // Store the chosen style
+        }
+      }
+    </script>
+  </body>
+</html>
